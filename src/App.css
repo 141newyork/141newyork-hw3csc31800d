@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  border: 1px solid rgb(8, 170, 185);
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 400px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.display input {
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  text-align: right;
+  outline: none;
+}
+
+.result {
+  font-size: 24px;
+  color: green;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
+}
+
+button {
+  font-size: 20px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.clear {
+  grid-column: span 1;
+  background-color: #ff4444;
+  color: #fff;
+}
+
+.equal {
+  grid-column: span 1;
+  background-color: blue;
+  color: #fff;
+}
+.opbutton {
+  background-color: lightsteelblue;
+}
